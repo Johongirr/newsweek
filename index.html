@@ -6,75 +6,88 @@
    
    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
     <link rel="stylesheet" href="styles.css">
     <title>Newsweek</title>
 </head>
 <body>
-    <main class="main container-fluid">
+    
+    <main class="main container-fluid bg-white">
         <header id="header">
-            <div class="header-top d-flex align-items-center justify-content-between background-primary pl-4 py-1 text-white">
-                <div class="weather">
+            <div class="header-top position-md-relative d-flex align-items-center justify-content-between background-primary pl-4 py-1 text-white">
+                <div class="weather left d-flex flex-row justify-content-center align-items-center">
+                    <a href="#" class="text-white text-decoration-none  brand-2 display-2 d-md-block d-lg-none">
+                        Newsweek
+                   </a>
                     <a href="#" class="text-white pb-2">
                         <picture>
                          <source srcset="https://g.newsweek.com/img/weather/33.png" type="image/svg+xml">
                          <img src="https://g.newsweek.com/img/weather/33.png" class="weather-icon"  alt="icon for cloudy night">
                       </picture>
 
-                      Warsaw, PL 
-                      <picture style="display:inherit;"><source srcset="https://g.newsweek.com/img/weather/ic-white-arrow.webp" type="image/webp"><img src="https://g.newsweek.com/img/weather/ic-white-arrow.png" class="weather-arrow"></picture> 
-                    </a><br>
-                    <time datetime="2020-03-27">Fri, March 27 2020</time>
+                      
+                    </a>
+                    <a href="#" class="text-white d-md-flex rm-sm">
+                        Warsaw, PL
+                        <picture style="display:inherit;"><source srcset="https://g.newsweek.com/img/weather/ic-white-arrow.webp" type="image/webp"><img src="https://g.newsweek.com/img/weather/ic-white-arrow.png" class="weather-arrow"></picture> 
+
+                    </a>
+                    <br>
+                    <time datetime="2020-03-27" class="d-md-none rm-sm d-lg-block">Fri, March 27 2020</time>
                 </div>
-                <div>
-                   <a href="#" class="text-white text-decoration-none brand display-2">
+                <div class="middle position-md-absolute justify-self-md">
+                   <a href="#" class="text-white text-decoration-none brand display-2 d-lg-block">
                         Newsweek
                    </a>
                 </div>
-                <div class="pr-3 ">
+                <div class="pr-3 right d-sm-flex">
                     <ul class="nav d-flex align-items-center">
                         <li><a href="#" class="text-white pr-3 text-decoration-none">SIGN IN</a></li>
                         <li><a href="#" class="text-white text-wrap bg-light color-primary p-1 text-decoration-none">
                             SUBSCRIBE
  
                         </a></li>
+                        <li class="pl-2 d-md-block d-lg-none"><a href="#" class="text-white">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                        </a></li>
                     </ul>
                 </div>
             </div>
             <nav class="main-nav border border-bottom-secondary">
-                <ul class="nav d-flex align-items-center py-3 bg-white">
+                <ul class="nav d-flex align-items-center justify-content-around py-3 bg-white justify-content-ev">
                     <li class="nav-item">
-                      <a class="nav-link text-dark py-0 px-3" href="#">U.S</a>
+                      <a class="nav-link text-dark py-0 px-3 px-md-1" href="#">U.S</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-body py-0 px-3" href="#">World</a>
+                      <a class="nav-link text-body py-0 px-3 px-md-1" href="#">World</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-body py-0 px-3" href="#">Business</a>
+                      <a class="nav-link text-body py-0 px-3 px-md-1" href="#">Business</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3" href="#">Tech & Science</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1" href="#">Tech & Science</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3" href="#">Culture</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1" href="#">Culture</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3" href="#">Newsgeek</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1" href="#">Newsgeek</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3" href="#">Sports</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1" href="#">Sports</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3" href="#">Health</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1" href="#">Health</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3" href="#">The Debate</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1" href="#">The Debate</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3" href="#">Vantage</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1" href="#">Vantage</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body py-0 px-3 border-right-0" href="#">Weather</a>
+                        <a class="nav-link text-body py-0 px-3 px-md-1 border-right-0" href="#">Weather</a>
                       </li>
                       <form class="d-flex align-items-center justify-content-around">
                           <input type="text" class="user-input text-secondary w-50 border-0" placeholder="Search">
@@ -83,10 +96,10 @@
             </nav>
         </header>
          <div class="row bg-white mx-auto pt-4">
-             <div class="col px-3">
+             <div class="col-md-4 col-xl-3 px-3">
                  <span class="text-secondary pb-2">FEATURED STORY</span>
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -98,7 +111,7 @@
                     At least 22 states have issued a "stay at home" order, while disaster declarations have been made in several more states, including New Jersey, Maryland, Illinois and Missouri.
                 </p>
                 <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b"  class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         WORLD
                     </span>
@@ -110,7 +123,7 @@
                     The prime minister said in a statement that he would continue to lead his government's response to the COVID-19 pandemic by video conference.                
                 </p>
                 <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         POLITICS
                     </span>
@@ -121,7 +134,7 @@
                 <p class="text-secondary">
                     Kirill Dmitriev, the CEO of the Russian Direct Investment Fund, said multinational action is required to rebalance the coronavirus-striken world economy.                </p>
                 <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                        POLITICS
                     </span>
@@ -133,7 +146,7 @@
                     2020 has become the COVID-19 Election. How President Donald Trump handles the crisis—and how he is perceived to handle it—will likely determine whether he is re-elected.               
                  </p>
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label text-primary font-weight-bolder">
                        POLITICS
                     </span>
@@ -147,7 +160,7 @@
                      </p>
                 </div>
                 <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label text-primary font-weight-bolder">
                        POLITICS
                     </span>
@@ -161,7 +174,7 @@
                      </p>
                 </div>
                 <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label text-primary font-weight-bolder">
                        POLITICS
                     </span>
@@ -175,7 +188,7 @@
                      </p>
                 </div>
                 <div>
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     
                 </div>
                 <div class="border border-secondary p-3">
@@ -187,10 +200,10 @@
                      </p>
                 </div>
             </div>
-             <div class="col col-5 px-3">
+             <div class="col-md-8 col-xl-6 px-3">
                  <span class="text-secondary pb-2">TOP STORY</span>
                 <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="img-fluid w-100" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" class="img-fluid w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         WORLD
                     </span>
@@ -208,7 +221,7 @@
                     <div class="col">
                         
                         <div class="position-relative">
-                            <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="img-fluid w-100" alt="empty new york street on quarentine">
+                            <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" class="img-fluid w-100" alt="empty new york street on quarentine">
                             <span class="position-absolute label">
                                 U.S
                             </span>
@@ -222,7 +235,7 @@
                     </div>
                     <div class="col">
                         <div class="position-relative">
-                            <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="img-fluid w-100" alt="empty new york street on quarentine">
+                            <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" class="img-fluid w-100" alt="empty new york street on quarentine">
                             <span class="position-absolute label">
                                 U.S
                             </span>
@@ -236,7 +249,7 @@
                     </div>
                     <div class="col">
                         <div class="position-relative">
-                            <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="img-fluid w-100" alt="empty new york street on quarentine">
+                            <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" class="img-fluid w-100" alt="empty new york street on quarentine">
                             <span class="position-absolute label">
                                 U.S
                             </span>
@@ -340,7 +353,7 @@
                   </div>
                   <hr class="text-secondary">
             </div>
-             <div class="col px-3 d-block">
+             <div class=" col-md-12 col-xl-3 px-3 d-block">
                  <span class="text-secondary pb-2">OPINION</span>
                  <div class="media border-bottom-lightgrey ">
                     <img src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.webp?w=63&h=63&f=ca92d03f69e06f6dd117bf04cef90475" class="img-round-small cell mr-3" alt="">
@@ -450,7 +463,7 @@
                          </a>
                       </div>
                       <div class="position-relative">
-                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                         <span class="position-absolute label text-primary font-weight-bolder">
                            POLITICS
                         </span>
@@ -476,7 +489,7 @@
                          <a href="#" class="text-decoration-none text-dark pt-2">update preferences</a>
                       </div>
                     <div class="position-relative">
-                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                         <span class="position-absolute label text-primary font-weight-bolder">
                            POLITICS
                         </span>
@@ -490,7 +503,7 @@
                          </p>
                     </div>
                     <div class="position-relative">
-                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                         <span class="position-absolute label text-primary font-weight-bolder">
                            POLITICS
                         </span>
@@ -504,7 +517,7 @@
                          </p>
                     </div>
                     <div class="position-relative">
-                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                        <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                         <span class="position-absolute label text-primary font-weight-bolder">
                            POLITICS
                         </span>
@@ -530,7 +543,7 @@
              <div class="px-3 mb-3">
                  <div class="position-relative">
                     <a href="#">
-                        <img src="https://d.newsweek.com/en/full/1576902/april-03-2020-cover.webp?w=290&h=387&l=0&t=0&q=90&f=cfa2e393b9ccfb4971e86af4782d1537"  alt="">
+                        <img src="https://d.newsweek.com/en/full/1576902/april-03-2020-cover.webp?w=290&h=387&l=0&t=0&q=90&f=cfa2e393b9ccfb4971e86af4782d1537"  class="w-100" alt="">
                     </a>
                     <span class="position-absolute label">
                         APRIL 03 ISSUE
@@ -541,7 +554,7 @@
             </div>
              <div class="px-3 mb-3">
                 <a href="#" >
-                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="img-fluid" style = "height:311px">
+                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5"  alt="" class="w-100 img-fluid" style = "height:311px">
                 </a>
                 <p class="pt-3">
                     <span class="wrap-text">
@@ -557,7 +570,7 @@
             </div>
              <div class="px-3 mb-3">
                  <a href="#" >
-                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="img-fluid" style = "height:311px">
+                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="w-100 img-fluid" style = "height:311px">
                 </a>
                 <p class="pt-3">
                     <span class="wrap-text">
@@ -573,7 +586,7 @@
              </div>
              <div class="px-3 mb-3">
                  <a href="#" >
-                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="img-fluid" style = "height:311px">
+                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="w-100 img-fluid" style = "height:311px">
                 </a>
                 <p class="pt-3">
                     <span class="wrap-text">
@@ -589,7 +602,7 @@
              </div>
              <div class="px-3 mb-3">
                  <a href="#" >
-                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="img-fluid" style = "height:311px">
+                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="w-100 img-fluid" style = "height:311px">
                 </a>
                 <p class="pt-3">
                     <span class="wrap-text">
@@ -605,7 +618,7 @@
              </div>
              <div class="px-3 mb-3">
                  <a href="#" >
-                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="img-fluid" style = "height:311px">
+                    <img src="https://d.newsweek.com/en/full/1575272/fe-covid-cure-opener.webp?w=466&h=311&l=47&t=40&q=90&f=7d5d8ed57150fd6695e0e7d465be9cf5" alt="" class="w-100 img-fluid" style = "height:311px">
                 </a>
                 <p class="pt-3">
                     <span class="wrap-text">
@@ -653,12 +666,12 @@
              </div>
              
          </div>
-         <p class="text-center text-dark bg-white mt-5 pb-3"><span class="wrap-text font-weight-bolder">N</span> EDITOR'S PICK</p>
+         <p class="text-center text-dark bg-white mt-0 pt-5 pb-3"><span class="wrap-text font-weight-bolder">N</span> EDITOR'S PICK</p>
          <hr class="text-secondary p-0 m-0">
          <div class="row row-cols-xl-4 bg-white mx-auto">
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -672,7 +685,7 @@
              </div>
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -686,7 +699,7 @@
              </div>
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -700,7 +713,7 @@
              </div>
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -714,7 +727,7 @@
              </div>
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -728,7 +741,7 @@
              </div>
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -742,7 +755,7 @@
              </div>
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -756,7 +769,7 @@
              </div>
              <div class="px-3 mb-3">
                  <div class="position-relative">
-                    <img src="https://d.newsweek.com/en/full/1577139/closed-chicago-theatre-seen-chicago-illinois-march-21-2020.webp?w=397&h=265&q=90&f=a1738cc3e69b02e03597553cf6d8ee3b" alt="empty new york street on quarentine">
+                    <img src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"  class="w-100" alt="empty new york street on quarentine">
                     <span class="position-absolute label">
                         U.S
                     </span>
@@ -769,6 +782,422 @@
                 </p>
              </div>
          </div>
+         <p class="text-center text-dark bg-white mt-0 pt-5 pb-3"><span class="wrap-text font-weight-bolder">N</span> FEATURED SLIDESHOWS</p>
+         <hr class="text-secondary p-0 m-0">
+         <div class="row row-cols-sm-1 row-cols-md-2  row-cols-xl-3  mx-auto">
+             <div class="px-3  pb-5">
+                <div class="position-relative w-100">
+                    <a href="#" class="">
+                        <img src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" class="w-100 img-fluid" alt="">
+                    </a>
+                    <span class="position-absolute label">
+                        APRIL 03 ISSUE
+                    </span>
+                    
+                 </div>
+                 <a href="#" class="text-decoration-none text-dark pb-4 pt-2">
+                    Relive the 'Star Wars' Saga at These Filming Locations
+                 </a>
+             </div>
+             <div class="px-3 pb-5">
+                <div class="position-relative">
+                    <a href="#" class="w-100">
+                        <img src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" class="w-100 img-fluid" alt="">
+                    </a>
+                    <span class="position-absolute label">
+                        APRIL 03 ISSUE
+                    </span>
+                    
+                 </div>
+                 <a href="#" class="text-decoration-none text-dark pb-4 pt-2">
+                    Relive the 'Star Wars' Saga at These Filming Locations
+                 </a>
+             </div>
+             <div class="px-3 pb-5">
+                <div class="position-relative">
+                    <a href="#" class="w-100">
+                        <img src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" class="w-100 img-fluid" alt="">
+                    </a>
+                    <span class="position-absolute label">
+                        APRIL 03 ISSUE
+                    </span>
+                    
+                 </div>
+                 <a href="#" class="text-decoration-none text-dark pb-4 pt-2">
+                    Relive the 'Star Wars' Saga at These Filming Locations
+                 </a>
+             </div>
+         </div>
+          <hr class="text-secondary p-0 m-0">
+          <div class="row row-cols-xl-3 row-cols-md-2 row-cols-sm-1 bg-white pt-4">
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3">
+                <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media  align-items-start pb-2 ">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+            </div>
+          </div>
+
+          <hr class="secondary-text">
+
+          <div class="row row-col-sm-1 row-cols-md-2 row-cols-xl-3  bg-white pt-4">
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid"  alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid"  alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3 pb-3">
+                <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media  align-items-start pb-2 ">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                   
+            </div>
+          </div>
+          <hr class="secondary-text">
+
+          <div class="row row-cols-md-2 row-cols-xl-3 bg-white pt-4">
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3 pb-3">
+                <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media  align-items-start pb-2 ">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                   
+            </div>
+          </div>
+          <hr class="secondary-text">
+
+          <div class="row row-cols-md-2 row-cols-xl-3 bg-white pt-4">
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3" class="pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="w-100 img-fluid"  alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3">
+                <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media  align-items-start pb-2 ">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                   
+            </div>
+          </div>
+          <hr class="secondary-text">
+
+          <div class="row row-cols-md-2 row-cols-xl-3 bg-white pt-4">
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="img-fluid w-100" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="img-fluid w-100" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="px-3 pb-3">
+                <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media  align-items-start pb-2 ">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                   
+            </div>
+          </div>
+          <hr class="secondary-text">
+
+          <div class="row  bg-white pt-4">
+            <div class="col-md-12 col-lg-4 px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="img-fluid w-100" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="col-md-12 col-lg-4 px-3 pb-5">
+                <a href="#" class="w-100">
+                    <img src="https://d.newsweek.com/en/full/1577276/peter-navarro.webp?w=397&h=265&f=aceaf9e820dd5bb6685bda9837debd4a" class="img-fluid w-100" alt="">
+                </a>
+                <a href="#" class="text-decoration-none text-dark">
+                    Trump Picks Navarro as Defense Production Act Policy Coordinator
+                </a>
+            </div>
+            <div class="col-md-12 col-lg-4 px-3 ">
+                <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media border-bottom-lightgrey align-items-start pb-2 mb-2">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                  <div class="media  align-items-start pb-2 ">
+                    <img src="https://d.newsweek.com/en/full/1577250/prince-charles.webp?w=95&amp;h=95&amp;f=89330ab0db8d3a55fd426ce2037f1b7d" class="mr-3" alt="...">
+                     <a href="#" class="hover-primary text-decoration-none hover-primary text-dark">
+                        Why Are We Testing Royals Before Nurses?
+                     </a>
+                  </div>
+                   
+            </div>
+          </div>
+          <div class="row bg-white">
+              <div class="col-xl-8 px-3 pb-5 bg-lightgrey">
+                <div class="subscribe__container d-flex mt-5 ">
+                    <div class="subscribe__img_cover position-relative">
+                        <img src="https://d.newsweek.com/en/full/1574205/march-20-27-2020-cover.jpg?w=170&q=95&f=d09d4323d899b185262420c3499dcda8" alt="">
+                        <img src="https://d.newsweek.com/en/full/1576902/april-03-2020-cover.jpg?w=170&q=95&f=e7b6af0ef76e162727acd0141bfc2e8a" class="mr-4 img-move position-absolute" alt="">
+                
+                    </div> 
+                    <div class="ml-5 pl-5">
+                        <p href="#" class="h4">
+                            In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                        </p>
+                        <p class="text-secondary">
+                            All Access + Weekly Delivery. <br>
+                            Choose A Membership That's Perfect for You! 
+                        </p>
+                        <a href="#" class="btn-signup btn-subscribe">SUBSCRIBE</a>
+                    </div>
+                </div>
+
+              </div>
+              <div class="col-xl-4 px-3 ">
+                <div class="newsletter__container d-flex mt-5">
+                    <div class="img__newsletter mr-3"></div>
+                    <div>
+                        <p class="h3">The starting 5</p>
+                        <p class="lead">
+                            See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+                        </p>
+                        <a href="#" class="btn btn-danger">SIGN UP</a>
+                    </div>
+                </div>
+                
+              </div>
+          </div>
+          <hr class="text-secondary my-4">
+          <div class="d-flex mpt-5 align-items-center justify-content-between">
+              <div class="left">
+                  <a href="#" class="color-primary display-4 font-weight-boldertext-large">Newsweek</a>
+                  <span>
+                      &copy; 2020 NEWSWEEK
+                  </span>
+                </div>
+              <div class="right">
+                <ul>
+                    <li><a href="#" class="before"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+              </div>
+          </div>
+          <hr class="text-secondary">
+          <ul class="d-flex  flex-wrap">
+              <li class="text-dark">Edition:</li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">U.S. Edition</a></li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">日本</a></li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">Pakistan
+            </a></li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">Polska</a></li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">România</a></li>
+          </ul>
+          <ul class="d-flex flex-wrap justify-content-around pb-4">
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey pl-0">
+                About Us
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Corrections
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Contact Us
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Editorial Guidelines
+
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Advertise   
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Copyright
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Terms & Conditions
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Privacy Policy
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Cookie Policy
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Terms of Sale
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Archive
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Announcements
+ 
+                 </a>
+             </li>
+              <li><a href="#" class="text-decoration-none text-secondary border-right-lightgrey">
+                Consent preferences
+                 </a>
+             </li>
+          </ul>
     </main>
     
  
