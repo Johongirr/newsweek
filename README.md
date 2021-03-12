@@ -11,7 +11,7 @@ This is project challenge by Odin Project in which we have to copy design of [ne
 5. Bootstrap icons
 
 
-### [Watch live](https://johongirr.github.io/the-nextweb/)
+### [Watch live](https://johongirr.github.io/newsweek/)
 
 ### Author
 :man: Johongir
