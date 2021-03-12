@@ -124,9 +124,7 @@ header .header__middle .nav-item:not(:last-child) .nav-link {
 }
 
     /* search form */
-.header .header__search-form-box {
-    flex: 1;
-}
+ 
 .header .form {
     width: 6rem;
 }
