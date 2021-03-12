@@ -91,11 +91,13 @@ img {
     height: 4rem;
     right: 0;
     top: -3.1rem;
+    
     background-color: var(--primary-color);
     clip-path: polygon(0 76%, 100% 75%, 100% 100%, 16% 100%);
 
     
 }
+
 
 .header :is(.header__middle, .header__bottom){
     background-color: var(--white);
@@ -107,10 +109,8 @@ img {
  
 .header .header__middle .nav-link {
     color: var(--black) ;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    font: 700 1.15rem/1.5rem "Roboto Condensed", sans-serif;
+    padding: 0 .8rem
 }
 header .header__middle .nav-item:first-child .nav-link {
     padding-left: 0;
@@ -124,9 +124,7 @@ header .header__middle .nav-item:not(:last-child) .nav-link {
 }
 
     /* search form */
-.header .header__search-form-box {
-    flex: 1;
-}
+ 
 .header .form {
     width: 6rem;
 }
