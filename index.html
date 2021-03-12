@@ -3,19 +3,1732 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Newsweek</title>
 </head>
-<body>
+<body class="page">
 
-     
+    <!-- header -->
+    <header class="header page__header">
+        <div class="container-xl p-0">
+            <div class="d-flex header__top  justify-content-between align-items-end text-white m-md-0">
+                <time class="header__date" datetime="2021-11-03">
+                    Thu, Mar 11, 2021
+                </time>
+                <div class="header__logo-box">
+                    <a href="#" class="header__logo-link">
+                        <svg class="header__icon" version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g><path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path></g></svg>
+                    </a>
+                </div>
+                <div class="header__btn-box d-flex">
+                    <a href="#" class="header__link text-white">LOGIN</a>
+                    <a href="#" class="rounded-pill bg-warning header__btn">
+                        SUBSCRIBE
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                    </a>
+                    <div class="hamburger-btn">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="header__middle">
+                <nav aria-label="navigation">
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border-0" href="#">Disabled</a>
+                          </li>
+                        <li class="nav-item header__search-form-box">
+                            <form action="#" class="form header__form d-flex align-items-center">
+                                <input type="text" name="search-articles" class="form__input border-0" placeholder="Search">
+                                <svg class="form__search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>
+                            </form>      
+                        </li>
+                         
+                      </ul>
+                </nav>
+            </div>
+            <div class="header__bottom p-3">
+                <nav aria-label="navigation for trending topics">
+                    <ul class="nav align-items-center">
+                        <li class="nav-item">
+                          TRENDING
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">JOE BIDEN</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">DONALD TRUMP</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">CORONAVIRUS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">STIMULUS PACKAGE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">VACCINE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ANDREW CUOMO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">GAVIN NEWSOM</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">MEGHAN MARKLE</a>
+                        </li>
+                      </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main page__main">
+        <div class="container-xl main__container pt-4">
+            <div class="row px-4 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                    <p class="text-muted">
+                        FEATURED STORIES
+                    </p>
+                    <section class="featured-articles">
+                        <article class="article-card">
+                            <figure class="article-card__img-box position-relative">
+                                <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of andrew cuomo giving public speech" class="article-card__imh">
+                                <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                    NEWS
+                                </span>
+                            </figure>
+                            <h2 class="article-card__title">
+                                <a href="#" class="article-card__link">
+                                    Andrew Cuomo Edges Toward Impeachment With New Accuser and New Inquiry
+                                </a>
+                            </h2>
+                            <div class="article-card__summary">
+                                <p class="article-card__paragraph">
+                                    Impeachment could be on the horizon for New York Governor Andrew Cuomo, with the Democrat continuing to refuse calls to resign following the emergence of a sixth sexual harassment allegation.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <figure class="article-card__img-box position-relative">
+                                <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of andrew cuomo giving public speech" class="article-card__imh">
+                                <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                    NEWS
+                                </span>
+                            </figure>
+                            <h2 class="article-card__title">
+                                <a href="#" class="article-card__link">
+                                    Andrew Cuomo Edges Toward Impeachment With New Accuser and New Inquiry
+                                </a>
+                            </h2>
+                            <div class="article-card__summary">
+                                <p class="article-card__paragraph">
+                                    Impeachment could be on the horizon for New York Governor Andrew Cuomo, with the Democrat continuing to refuse calls to resign following the emergence of a sixth sexual harassment allegation.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <figure class="article-card__img-box position-relative">
+                                <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of andrew cuomo giving public speech" class="article-card__imh">
+                                <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                    NEWS
+                                </span>
+                            </figure>
+                            <h2 class="article-card__title">
+                                <a href="#" class="article-card__link">
+                                    Andrew Cuomo Edges Toward Impeachment With New Accuser and New Inquiry
+                                </a>
+                            </h2>
+                            <div class="article-card__summary">
+                                <p class="article-card__paragraph">
+                                    Impeachment could be on the horizon for New York Governor Andrew Cuomo, with the Democrat continuing to refuse calls to resign following the emergence of a sixth sexual harassment allegation.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <figure class="article-card__img-box position-relative">
+                                <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of andrew cuomo giving public speech" class="article-card__imh">
+                                <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                    NEWS
+                                </span>
+                            </figure>
+                            <h2 class="article-card__title">
+                                <a href="#" class="article-card__link">
+                                    Andrew Cuomo Edges Toward Impeachment With New Accuser and New Inquiry
+                                </a>
+                            </h2>
+                            <div class="article-card__summary">
+                                <p class="article-card__paragraph">
+                                    Impeachment could be on the horizon for New York Governor Andrew Cuomo, with the Democrat continuing to refuse calls to resign following the emergence of a sixth sexual harassment allegation.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <figure class="article-card__img-box position-relative">
+                                <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of andrew cuomo giving public speech" class="article-card__imh">
+                                <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                    NEWS
+                                </span>
+                            </figure>
+                            <h2 class="article-card__title">
+                                <a href="#" class="article-card__link">
+                                    Andrew Cuomo Edges Toward Impeachment With New Accuser and New Inquiry
+                                </a>
+                            </h2>
+                            <div class="article-card__summary">
+                                <p class="article-card__paragraph">
+                                    Impeachment could be on the horizon for New York Governor Andrew Cuomo, with the Democrat continuing to refuse calls to resign following the emergence of a sixth sexual harassment allegation.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <figure class="article-card__img-box position-relative">
+                                <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of andrew cuomo giving public speech" class="article-card__imh">
+                                <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                    NEWS
+                                </span>
+                            </figure>
+                            <h2 class="article-card__title">
+                                <a href="#" class="article-card__link">
+                                    Andrew Cuomo Edges Toward Impeachment With New Accuser and New Inquiry
+                                </a>
+                            </h2>
+                            <div class="article-card__summary">
+                                <p class="article-card__paragraph">
+                                    Impeachment could be on the horizon for New York Governor Andrew Cuomo, with the Democrat continuing to refuse calls to resign following the emergence of a sixth sexual harassment allegation.
+                                </p>
+                            </div>
+                        </article>
+                    </section>
 
-    <main class="main container-fluid bg-white">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p class="text-muted">
+                        TOP STORY
+                    </p>
+                    <section class="top-stories">
+                        <article class="article-card">
+                            <figure class="article-card__img-box position-relative">
+                                <img src="https://d.newsweek.com/en/full/1753986/hacking-keyboard.jpg?w=591&h=364&f=e1d7bdf2ac0f4c3c550234d3013c0772" alt="person using gloomy keyboard in the dark room" class="article-card__img">
+                                <span class="top-stories__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                    U.S.
+                                </span>
+                            </figure>
+                            <h2 class="article-card__title">
+                                <a href="#" class="article-card__link">
+                                    After SolarWinds, Companies Turn to Insurers, Not Feds, for Protection
+                                </a>
+                            </h2>
+                            <div class="article-card__summary">
+                                <p class="article-card__paragraph">
+                                    "My theory is that there are only two kinds of corporations: those that have been breached, and those that will be breached," Resilience cybersecurity insurance firm CEO Mario Vitale told Newsweek.
+                                </p>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="my-turn">
+                        <p class="text-muted">
+                            MY TURN
+                            <div class="row">
+                                <div class="col-4">
+                                    <article class="card-my-turn">
+                                        <a href="#" class="card-my-turn__link">
+                                            <figure class="card-my-turn__img-box">
+                                                <img src="https://d.newsweek.com/en/full/1753287/donor-transplant-friends-family.jpg?w=397&h=397&f=cc5ff089c09385dcf8d21e52e5aa8a40" alt="image of two patients" class="card-my-turn__img">
+                                            </figure>
+                                            <h4 class="card-my-turn__title">
+                                                'My Friend Donated Her Liver to My Husband'
+                                            </h4>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-4">
+                                    <article class="card-my-turn">
+                                        <a href="#" class="card-my-turn__link">
+                                            <figure class="card-my-turn__img-box">
+                                                <img src="https://d.newsweek.com/en/full/1753287/donor-transplant-friends-family.jpg?w=397&h=397&f=cc5ff089c09385dcf8d21e52e5aa8a40" alt="image of two patients" class="card-my-turn__img">
+                                            </figure>
+                                            <h4 class="card-my-turn__title">
+                                                'My Friend Donated Her Liver to My Husband'
+                                            </h4>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-4">
+                                    <article class="card-my-turn">
+                                        <a href="#" class="card-my-turn__link">
+                                            <figure class="card-my-turn__img-box">
+                                                <img src="https://d.newsweek.com/en/full/1753287/donor-transplant-friends-family.jpg?w=397&h=397&f=cc5ff089c09385dcf8d21e52e5aa8a40" alt="image of two patients" class="card-my-turn__img">
+                                            </figure>
+                                            <h4 class="card-my-turn__title">
+                                                'My Friend Donated Her Liver to My Husband'
+                                            </h4>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </p>
+                    </section>
+                    <!-- culture travel -->
+                    <section class="culture-travel">
+                        <p class="text-muted">
+                            CULTURE & TRAVEL
+                        </p>
+                        <div class="row">
+                            <div class="col-4">
+                                <article class="culture-travel-card">
+                                    <a href="#" class="culture-travel-card__link">
+                                        <figure class="culture-travel-card__img-box position-relative">
+                                            <img src="https://d.newsweek.com/en/full/1750416/cul-map-women-sunniva-hilde.jpg?w=397&h=397&l=53&t=54&f=75ada2866e405b61ec4b9ed4687392a9" alt="img of dog with owner in the snow" class="culture-travel-card__img">
+                                            <span class="culture-travel-card__category position-absolute bottom-0 start-0 text-dark">
+                                                CLIMATE CHANGE  
+                                            </span>
+                                        </figure>
+                                        <h4 class="culture-travel-card__title">
+                                            Why the First Women to Overwinter Alone in the Harsh Arctic Returned
+                                        </h4>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-4">
+                                <article class="culture-travel-card">
+                                    <a href="#" class="culture-travel-card__link">
+                                        <figure class="culture-travel-card__img-box position-relative">
+                                            <img src="https://d.newsweek.com/en/full/1750416/cul-map-women-sunniva-hilde.jpg?w=397&h=397&l=53&t=54&f=75ada2866e405b61ec4b9ed4687392a9" alt="img of dog with owner in the snow" class="culture-travel-card__img">
+                                            <span class="culture-travel-card__category position-absolute bottom-0 start-0 text-dark">
+                                                CLIMATE CHANGE  
+                                            </span>
+                                        </figure>
+                                        <h4 class="culture-travel-card__title">
+                                            Why the First Women to Overwinter Alone in the Harsh Arctic Returned
+                                        </h4>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-4">
+                                <article class="culture-travel-card">
+                                    <a href="#" class="culture-travel-card__link">
+                                        <figure class="culture-travel-card__img-box position-relative">
+                                            <img src="https://d.newsweek.com/en/full/1750416/cul-map-women-sunniva-hilde.jpg?w=397&h=397&l=53&t=54&f=75ada2866e405b61ec4b9ed4687392a9" alt="img of dog with owner in the snow" class="culture-travel-card__img">
+                                            <span class="culture-travel-card__category position-absolute bottom-0 start-0 text-dark">
+                                                CLIMATE CHANGE  
+                                            </span>
+                                        </figure>
+                                        <h4 class="culture-travel-card__title">
+                                            Why the First Women to Overwinter Alone in the Harsh Arctic Returned
+                                        </h4>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- more stories -->
+                    <section class="more-stories mt-5">
+                        <p class="text-muted border-bottom border-light">MORE STORIES</p>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="story">
+                            <div class="d-flex">
+                                <figure class="story__img-box me-2">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                                </figure>
+                                <div class="story__text-box">
+                                    <h4 class="story__title">
+                                        <a href="#" class="story__link">
+                                            Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                        </a>
+                                    </h4>
+                                    <p class="story__paragraph">
+                                        Secretary of State Antony Blinken will be joined by national security adviser Jake Sullivan in a meeting with senior Chinese diplomats Yang Jiechi and Wang Yi in Alaska next
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <p class="text-muted">
+                        DEBATE
+                    </p>
+                    <hr style="height: 4px;">
+                    <div class="opinion">
+                       <div class="d-flex">                          
+                                <figure class="opinion__img-box me-3">
+                                    <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                </figure>                         
+                                <div class="opinion__text-box">
+                                    <h3 class="opinion__title">
+                                        <a href="#" class="opinion__link">
+                                            What Tolerance Is—and What It Shouldn't Be—in Practice
+                                        </a>
+                                    </h3>
+                                    <p class="opinion__text">
+                                        BY 
+                                        <span class="opinion__author-name">
+                                            FREDERICK M. HESS
+                                        </span>
+                                    </p>
+                                </div>                               
+                       </div>
+                    </div>
+                    <div class="hr-box position-relative mb-4">
+                        <hr style="height: 4px;">
+                        <div class="badge  bg-dark text-white badge-circle position-absolute start-50 top-50 translate-middle">
+                            VS
+                        </div>
+                    </div>
+                    <div class="opinion">
+                        <div class="d-flex">
+                            <div class="opinion__text-box">
+                                <h3 class="opinion__title">
+                                    <a href="#" class="opinion__link">
+                                        What Tolerance Is—and What It Shouldn't Be—in Practice
+                                    </a>
+                                </h3>
+                                <p class="opinion__text">
+                                    BY 
+                                    <span class="opinion__author-name">
+                                        FREDERICK M. HESS
+                                    </span>
+                                </p>
+                            </div>
+                            
+
+                                 <figure class="opinion__img-box ms-3">
+                                     <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                 </figure>
+                           
+                                 
+                        </div>
+                     </div>
+                     <hr style="height: 4px;" class="mb-4">
+                     <p class="text-muted">
+                         OPINION
+                     </p>
+                     <div class="opinion border-bottom border-dark">
+                        <div class="d-flex">                          
+                                 <figure class="opinion__img-box me-3">
+                                     <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                 </figure>                         
+                                 <div class="opinion__text-box">
+                                     <h3 class="opinion__title">
+                                         <a href="#" class="opinion__link">
+                                             What Tolerance Is—and What It Shouldn't Be—in Practice
+                                         </a>
+                                     </h3>
+                                     <p class="opinion__text">
+                                         BY 
+                                         <span class="opinion__author-name">
+                                             FREDERICK M. HESS
+                                         </span>
+                                     </p>
+                                 </div>                               
+                        </div>
+                     </div>
+                     <div class="opinion border-bottom border-dark pt-3">
+                        <div class="d-flex">                          
+                                 <figure class="opinion__img-box me-3">
+                                     <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                 </figure>                         
+                                 <div class="opinion__text-box">
+                                     <h3 class="opinion__title">
+                                         <a href="#" class="opinion__link">
+                                             What Tolerance Is—and What It Shouldn't Be—in Practice
+                                         </a>
+                                     </h3>
+                                     <p class="opinion__text">
+                                         BY 
+                                         <span class="opinion__author-name">
+                                             FREDERICK M. HESS
+                                         </span>
+                                     </p>
+                                 </div>                               
+                        </div>
+                     </div>
+                     <div class="opinion border-bottom border-dark pt-3">
+                        <div class="d-flex">                          
+                                 <figure class="opinion__img-box me-3">
+                                     <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                 </figure>                         
+                                 <div class="opinion__text-box">
+                                     <h3 class="opinion__title">
+                                         <a href="#" class="opinion__link">
+                                             What Tolerance Is—and What It Shouldn't Be—in Practice
+                                         </a>
+                                     </h3>
+                                     <p class="opinion__text">
+                                         BY 
+                                         <span class="opinion__author-name">
+                                             FREDERICK M. HESS
+                                         </span>
+                                     </p>
+                                 </div>                               
+                        </div>
+                     </div>
+                     <div class="opinion border-bottom border-dark pt-3">
+                        <div class="d-flex">                          
+                                 <figure class="opinion__img-box me-3">
+                                     <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                 </figure>                         
+                                 <div class="opinion__text-box">
+                                     <h3 class="opinion__title">
+                                         <a href="#" class="opinion__link">
+                                             What Tolerance Is—and What It Shouldn't Be—in Practice
+                                         </a>
+                                     </h3>
+                                     <p class="opinion__text">
+                                         BY 
+                                         <span class="opinion__author-name">
+                                             FREDERICK M. HESS
+                                         </span>
+                                     </p>
+                                 </div>                               
+                        </div>
+                     </div>
+                     <div class="opinion border-bottom border-dark pt-3">
+                        <div class="d-flex">                          
+                                 <figure class="opinion__img-box me-3">
+                                     <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                 </figure>                         
+                                 <div class="opinion__text-box">
+                                     <h3 class="opinion__title">
+                                         <a href="#" class="opinion__link">
+                                             What Tolerance Is—and What It Shouldn't Be—in Practice
+                                         </a>
+                                     </h3>
+                                     <p class="opinion__text">
+                                         BY 
+                                         <span class="opinion__author-name">
+                                             FREDERICK M. HESS
+                                         </span>
+                                     </p>
+                                 </div>                               
+                        </div>
+                     </div>
+                     <div class="opinion pt-3">
+                        <div class="d-flex">                          
+                                 <figure class="opinion__img-box me-3">
+                                     <img src="https://d.newsweek.com/en/full/1753990/andrew-cuomo-inquiry-accusations.jpg?w=397&h=265&q=90&f=9678630ac003583696a9b071704cd1af" alt="image of frederic hes" class="opinion__img">
+                                 </figure>                         
+                                 <div class="opinion__text-box">
+                                     <h3 class="opinion__title">
+                                         <a href="#" class="opinion__link">
+                                             What Tolerance Is—and What It Shouldn't Be—in Practice
+                                         </a>
+                                     </h3>
+                                     <p class="opinion__text">
+                                         BY 
+                                         <span class="opinion__author-name">
+                                             FREDERICK M. HESS
+                                         </span>
+                                     </p>
+                                 </div>                               
+                        </div>
+                     </div>
+                     <div class="newsletter-signup mt-3">
+                         <form action="#" class="signup-form">
+                             <label for="email" class="signup-form__label d-flex align-items-center">
+                                <span class="signup-form__icon"></span>
+                                START YOUR DAY WITH OUR TOP 5 ARTICLES
+                             </label>
+                             <input type="email" id="email" name="email" class="signup-form__input" placeholder="Email address">
+                             <button class="btn signup-form__btn">
+                                 FREE SIGN UP
+                             </button>
+                         </form>
+                     </div>
+                </div>
+            </div>
+            <div class="logo-box d-flex align-items-center justify-content-center border-bottom border-dark pb-3 mt-5">
+                <span class="logo"></span>
+                <span class="text">IN THE MAGAZINE</span>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="features-card">
+                        <figure class="features-card__img-box position-relative m-0">
+                            <img src="https://d.newsweek.com/en/full/1752191/cover-march-19-26-2021.jpg?w=360&h=480&q=90&f=8825018d96c4bcaf02231f0084d8a9d4" alt="" class="features-card__img">
+                            <span class="feautures-card__category position-absolute bg-light p-1 start-0 bottom-0">MARCH 26 ISSUE</span>
+                        </figure>
+                        <button class="btn bg-light features-card__btn w-100">
+                            SEE ALL FEATURES
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <article class="editor-pick">
+                        <figure class="editor-pick__img-box">
+                            <img src="https://d.newsweek.com/en/full/1750720/fe-china-biden-01.jpg?w=466&h=311&l=39&t=43&q=90&f=666ea06087ae689e44e0adf754e8e970" alt="" class="editor-pick__img">
+                        </figure>
+                        <span class="editor-pick__category">COVER</span>
+                        <span class="editor-pick__category-link">WORLD</span>
+                        <h4 class="editor-pick__title">
+                            <a href="#" class="editor-pick__link">
+                                Biden's Tough China Policy Poses Business Risk to Some of His Biggest Donors
+                            </a>
+                        </h4>
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <article class="editor-pick">
+                        <figure class="editor-pick__img-box">
+                            <img src="https://d.newsweek.com/en/full/1750720/fe-china-biden-01.jpg?w=466&h=311&l=39&t=43&q=90&f=666ea06087ae689e44e0adf754e8e970" alt="" class="editor-pick__img">
+                        </figure>
+                        <span class="editor-pick__category">COVER</span>
+                        <span class="editor-pick__category-link">WORLD</span>
+                        <h4 class="editor-pick__title">
+                            <a href="#" class="editor-pick__link">
+                                Biden's Tough China Policy Poses Business Risk to Some of His Biggest Donors
+                            </a>
+                        </h4>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <article class="editor-pick">
+                        <figure class="editor-pick__img-box">
+                            <img src="https://d.newsweek.com/en/full/1750720/fe-china-biden-01.jpg?w=466&h=311&l=39&t=43&q=90&f=666ea06087ae689e44e0adf754e8e970" alt="" class="editor-pick__img">
+                        </figure>
+                        <span class="editor-pick__category">COVER</span>
+                        <span class="editor-pick__category-link">WORLD</span>
+                        <h4 class="editor-pick__title">
+                            <a href="#" class="editor-pick__link">
+                                Biden's Tough China Policy Poses Business Risk to Some of His Biggest Donors
+                            </a>
+                        </h4>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <article class="editor-pick">
+                        <figure class="editor-pick__img-box">
+                            <img src="https://d.newsweek.com/en/full/1750720/fe-china-biden-01.jpg?w=466&h=311&l=39&t=43&q=90&f=666ea06087ae689e44e0adf754e8e970" alt="" class="editor-pick__img">
+                        </figure>
+                        <span class="editor-pick__category">COVER</span>
+                        <span class="editor-pick__category-link">WORLD</span>
+                        <h4 class="editor-pick__title">
+                            <a href="#" class="editor-pick__link">
+                                Biden's Tough China Policy Poses Business Risk to Some of His Biggest Donors
+                            </a>
+                        </h4>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <article class="editor-pick">
+                        <figure class="editor-pick__img-box">
+                            <img src="https://d.newsweek.com/en/full/1750720/fe-china-biden-01.jpg?w=466&h=311&l=39&t=43&q=90&f=666ea06087ae689e44e0adf754e8e970" alt="" class="editor-pick__img">
+                        </figure>
+                        <span class="editor-pick__category">COVER</span>
+                        <span class="editor-pick__category-link">WORLD</span>
+                        <h4 class="editor-pick__title">
+                            <a href="#" class="editor-pick__link">
+                                Biden's Tough China Policy Poses Business Risk to Some of His Biggest Donors
+                            </a>
+                        </h4>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <article class="editor-pick">
+                        <figure class="editor-pick__img-box">
+                            <img src="https://d.newsweek.com/en/full/1750720/fe-china-biden-01.jpg?w=466&h=311&l=39&t=43&q=90&f=666ea06087ae689e44e0adf754e8e970" alt="" class="editor-pick__img">
+                        </figure>
+                        <span class="editor-pick__category">COVER</span>
+                        <span class="editor-pick__category-link">WORLD</span>
+                        <h4 class="editor-pick__title">
+                            <a href="#" class="editor-pick__link">
+                                Biden's Tough China Policy Poses Business Risk to Some of His Biggest Donors
+                            </a>
+                        </h4>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <article class="editor-pick">
+                        <figure class="editor-pick__img-box">
+                            <img src="https://d.newsweek.com/en/full/1750720/fe-china-biden-01.jpg?w=466&h=311&l=39&t=43&q=90&f=666ea06087ae689e44e0adf754e8e970" alt="" class="editor-pick__img">
+                        </figure>
+                        <span class="editor-pick__category">COVER</span>
+                        <span class="editor-pick__category-link">WORLD</span>
+                        <h4 class="editor-pick__title">
+                            <a href="#" class="editor-pick__link">
+                                Biden's Tough China Policy Poses Business Risk to Some of His Biggest Donors
+                            </a>
+                        </h4>
+                    </article>
+                </div>
+            </div>
+            <div class="logo-box d-flex align-items-center justify-content-center border-bottom border-dark pb-3 mt-5">
+                <span class="logo"></span>
+                <span class="text">EDITOR' PICK</span>
+            </div>
+            <div class="row border-bottom border-dark py-4">
+               
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            </p>
+                        </div>
+                    </article> 
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            <span class="article-card__category position-absolute bottom-0 start-0 p-2 text-danger bg-light">
+                                WORLD
+                            </span>
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        <div class="article-card__summary">
+                            <p class="article-card__paragraph">
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                                Both Tehran and Washington, D.C., have warned that the window for a deal to revive the JCPOA is closing.
+                            
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="link-box py-2">
+                <a href="#" class="link">
+                    U.S.
+                </a>
+            </div>
+            <div class="row border-bottom border-dark pb-2">
+                
+                <div class="col-lg-4 col-sm-12">
+                   
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                             
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="article-card">
+                        <figure class="article-card__img-box  ">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                         
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="story p-0">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="link-box py-2">
+                <a href="#" class="link">
+                    U.S.
+                </a>
+            </div>
+            <div class="row border-bottom border-dark pb-2">
+                
+                <div class="col-lg-4 col-sm-12">
+                   
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                             
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="article-card">
+                        <figure class="article-card__img-box  ">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                         
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="story p-0">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="link-box py-2">
+                <a href="#" class="link">
+                    U.S.
+                </a>
+            </div>
+            <div class="row border-bottom border-dark pb-2">
+                
+                <div class="col-lg-4 col-sm-12">
+                   
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                             
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="article-card">
+                        <figure class="article-card__img-box  ">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                         
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="story p-0">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="link-box py-2">
+                <a href="#" class="link">
+                    U.S.
+                </a>
+            </div>
+            <div class="row border-bottom border-dark pb-2">
+                
+                <div class="col-lg-4 col-sm-12">
+                   
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                             
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="article-card">
+                        <figure class="article-card__img-box  ">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                         
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="story p-0">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="link-box py-2">
+                <a href="#" class="link">
+                    U.S.
+                </a>
+            </div>
+            <div class="row border-bottom border-dark pb-2">
+                
+                <div class="col-lg-4 col-sm-12">
+                   
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                             
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="article-card">
+                        <figure class="article-card__img-box  ">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                         
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="story p-0">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="link-box py-2">
+                <a href="#" class="link">
+                    U.S.
+                </a>
+            </div>
+            <div class="row border-bottom border-dark pb-2">
+                
+                <div class="col-lg-4 col-sm-12">
+                   
+                    <article class="article-card">
+                        <figure class="article-card__img-box position-relative">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                             
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                        
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="article-card">
+                        <figure class="article-card__img-box  ">
+                            <img src=" https://d.newsweek.com/en/full/1753254/antony-blinken-speaks-capitol-hill.jpg?w=397&h=295&f=0cc0508c54d9abf42db2d961be86a089" alt="image of iran usa agreement not to use nuclear" class="article-card__imh">
+                            
+                        </figure>
+                        <h2 class="article-card__title">
+                            <a href="#" class="article-card__link">
+                                Iran, U.S. Both Vow No Nuclear Concessions Amid Attacks, New Sanctions
+                                </a>
+                        </h2>
+                         
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <article class="story p-0">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story">
+                        <div class="d-flex">
+                            <figure class="story__img-box me-2">
+                                <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="joe biden in the congress" class="story__img">
+                            </figure>
+                            <div class="story__text-box">
+                                <h4 class="story__title">
+                                    <a href="#" class="story__link">
+                                        Joe Biden and Xi Jinping's Diplomats to Talk Over 'Deep Disagreements'
+                                    </a>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- subscribe and newsletter -->
+            <div class="row py-4 border-bottom border-dark">
+                <div class="col-md-7 col-12">
+                    <span class="text--red pb-1">SUBSCRIBE</span>
+                    <section class="subscribe">
+                      
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <figure class="subscribe__img-box position-relative">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="" class="subscribe__img subscribe__img--1">
+                                    <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="" class="subscribe__img subscribe__img--2 position-absolute ">
+                                </figure>
+                            </div>
+                            <div class="col-8">
+                                <div class="subscribe__text-box">
+                                    <h3 class="subscribe__title">
+                                        In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                                    </h3>
+                                    <p class="subscribe__paragraph">
+                                        All Access + Weekly Delivery.
+                                        Choose A Membership That's Perfect for You!
+                                    </p>
+                                    <button class="btn subscribe__btn">
+                                        SUBSCRIBE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-5 col-12">
+                    <span class="text--red pb-1">
+                        NEWSLETTER
+                    </span>
+                    <section class="newsletter">
+                        
+                        <div class="row">
+                            
+                                <div class="col-6">
+                                    <figure class="newsletter__img-box">
+                                        <img src="https://d.newsweek.com/en/full/1753319/secretary-antony-blinken-testifies-before-house-committee.jpg?w=95&h=95&f=57c94108117855450448ef08c3a971aa" alt="" class="newsletter__img">
+                                    </figure>
+                                </div>
+                                <div class="col-6">
+                                    <div class="newsletter__text-box">
+                                        <h3 class="newsletter__title">
+                                            The Starting 5
+                                        </h3>
+                                        <p class="newsletter__paragraph">
+                                            See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+                                        </p>
+                                        <form action="#" class="signup-form">
+                                            
+                                            <input type="email" id="email" name="email" class="signup-form__input" placeholder="Email address">
+                                            <button class="btn signup-form__btn">
+                                                FREE SIGN UP
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            
+                                
+                             
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container-xl p-0">
+        <footer class="footer page__footer">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center align-items-sm-start border-bottom border-dark pb-1">
+                <div class="logo-copyright-box d-flex align-items-baseline">
+                  <svg class="footer__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g><path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path></g></svg>
+                      <small class="footer__copyright ms-2">
+                        © 2021 NEWSWEEK DIGITAL LLC
+                      </small>
+                </div>
+                <ul class="social d-flex align-items-center m-0 p-0">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row m-0 pt-3">
+                <ul class="footer__list p-0">
+                    <li class="footer__item">
+                       <strong class="footer__editions">
+                        Editions:
+                       </strong>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            U.S. Edition
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            日本
+
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Pakistan
+ 
+                        </a>    
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Polska
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            România
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row m-0">
+                <ul class="footer__list p-0">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            About Us    
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Corrections
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Editorial Guidelines
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Advertise
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Copyright
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Cookie Policy
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Terms of Sale
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Announcements
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+<!--      
+
+    <main class="main container-xl-fluid bg-white">
         <header id="header">
             <div class="header-top position-md-relative d-flex align-items-center justify-content-between background-primary pl-4 py-1 text-white">
                 <div class="weather left d-flex flex-row justify-content-center align-items-center">
@@ -1083,7 +2796,7 @@
           </div>
           <div class="row bg-white">
               <div class="col-xl-8 px-3 pb-lg-5 pb-sm-2 bg-lightgrey">
-                <div class="subscribe__container d-flex mt-5 ">
+                <div class="subscribe__container-xl d-flex mt-5 ">
                     <div class="subscribe__img_cover position-relative">
                         <img src="https://d.newsweek.com/en/full/1574205/march-20-27-2020-cover.jpg?w=170&q=95&f=d09d4323d899b185262420c3499dcda8" alt="">
                         <img src="https://d.newsweek.com/en/full/1576902/april-03-2020-cover.jpg?w=170&q=95&f=e7b6af0ef76e162727acd0141bfc2e8a" class="mr-4 img-move position-absolute" alt="">
@@ -1103,7 +2816,7 @@
 
               </div>
               <div class="col-xl-4 px-3 ">
-                <div class="newsletter__container d-flex mt-5">
+                <div class="newsletter__container-xl d-flex mt-5">
                     <div class="img__newsletter mr-3"></div>
                     <div>
                         <p class="h3">The starting 5</p>
@@ -1201,7 +2914,8 @@
              </li>
           </ul>
     </main>
-    
- 
+     -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </body>
 </html>
